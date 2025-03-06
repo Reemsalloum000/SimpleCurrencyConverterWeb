@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محول العملات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2> 💰 محول العملات</h2>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="أدخل المبلغ" >
+            <select id="fromCurrency">
+            <option value="USD">دولار أمريكي - USD </option>
+            <option value="ILS">شيكل - ILS</option>
+            <option value="JOD">دينار أردني - JOD</option>
+            </select>
+            <span>🔄</span>
+            <select id="toCurrency">
+                <option value="ILS">شيكل - ILS</option>
+                <option value="USD">دولار أمريكي - USD </option>
+                <option value="JOD">دينار أردني - JOD</option>
+
+            </select>
+            <button onclick="convertCurrency()">تحويل</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
